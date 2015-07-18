@@ -22,6 +22,11 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Init files not shared with G2-common
 PRODUCT_COPY_FILES += \
+<<<<<<< HEAD
+=======
+    $(LOCAL_PATH)/init.g2.rc:root/init.g2.rc \
+    $(LOCAL_PATH)/fstab.g2:root/fstab.g2 \
+>>>>>>> a140783... Fix up the Rest
     $(LOCAL_PATH)/init.g2.sdcard.rc:root/init.g2.sdcard.rc
 
 # GSM permissions
