@@ -20,15 +20,6 @@ $(call inherit-product, device/lge/g2-common/g2.mk)
 ## overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-# Init files not shared with G2-common
-PRODUCT_COPY_FILES += \
-<<<<<<< HEAD
-=======
-    $(LOCAL_PATH)/init.g2.rc:root/init.g2.rc \
-    $(LOCAL_PATH)/fstab.g2:root/fstab.g2 \
->>>>>>> a140783... Fix up the Rest
-    $(LOCAL_PATH)/init.g2.sdcard.rc:root/init.g2.sdcard.rc
-
 # GSM permissions
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
@@ -45,3 +36,4 @@ PRODUCT_COPY_FILES += \
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensor_def_f320.conf:system/etc/sensor_def_variable.conf
+
